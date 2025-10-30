@@ -1,0 +1,137 @@
+/* About.css */
+
+/* Main container */
+.about-container {
+  /* background-color: #f8f9fa; */
+  background-color: #0f1015;
+  padding: 4rem 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Content container */
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left; /* Content aligned to the left */
+}
+
+/* Main title */
+.about-title {
+  margin-left: -10rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  /* text-align: left; Heading aligned to the right */
+}
+
+/* Grid for content and image */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Feature list */
+.about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Individual feature */
+.about-feature {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-left: -11rem;
+}
+
+.about-feature-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.about-feature-description {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Image section with animation */
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 4s ease-in-out infinite; /* Floating animation */
+  background-color: transparent; /* Transparent background */
+
+}
+
+.about-image-content {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 25rem;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Move image up and down */
+  }
+}
+
+/* CTA buttons */
+.about-cta {
+  display: flex;
+  justify-content: flex-start; /* Buttons aligned to the left */
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: -10rem;
+}
+
+.about-cta-button {
+  padding: 0.75rem 0.5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-cta-button.primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.about-cta-button.primary:hover {
+  background-color: #0056b3;
+}
+
+.about-cta-button.secondary {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.about-cta-button.secondary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
